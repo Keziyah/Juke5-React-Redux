@@ -44,6 +44,11 @@ export default function Sidebar (props) {
           })
         }
       </ul>
+      <section>
+        <h4 className="text-muted">
+          <Link to="/stations">STATIONS</Link>
+        </h4>
+      </section>
     </sidebar>
   );
 }
