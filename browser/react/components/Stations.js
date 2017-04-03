@@ -9,7 +9,7 @@ export default function Stations (props) {
 //   { name: 'Classical' }
 // ];
 
-const stations = Object.keys(props.station)
+const stations = props.stations
 console.log("props", this.props)
 
   return (
@@ -17,10 +17,10 @@ console.log("props", this.props)
       <h3>Stations</h3>
       <div className="list-group">
       {
-        stations.map(station => {
+        Object.keys(stations).map(genre => {
           return (
-            <div className="list-group-item" key={station}>
-              <Link to={'fill/this/in/later'}>{station}</Link>
+            <div className="list-group-item" key={genre}>
+              <Link to={'fill/this/in/later'}>{genre}</Link>
             </div>
           );
         })
