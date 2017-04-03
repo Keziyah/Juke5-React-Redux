@@ -6,10 +6,12 @@
 
 import { connect } from 'react-redux';
 import Station from '../components/Station';
-import convertSong from '../utils.js';
+import {convertSong} from '../utils.js';
+import { toggleSong } from '../action-creators/player';
+
 
 const mapStateToProps = function (state, ownProps) {
-    console.log('station props: ', ownProps);
+    console.log('station props: ', ownProps, "state", state);
   return {
     genreName: ownProps.params.genreName,
     songs: state.songs
@@ -21,7 +23,11 @@ const mapStateToProps = function (state, ownProps) {
 };
 
 const mapDispatchToProps = function (dispatch, ownProps) {
-  return {};
+  return {
+    toggleOne: function (song, list) {
+      dispatch(toggleSong(song, list))
+    }
+  };
 }
 
 const StationContainer = connect(

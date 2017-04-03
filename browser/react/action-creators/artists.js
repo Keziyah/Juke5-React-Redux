@@ -1,4 +1,4 @@
-import {RECEIVE_ARTISTS, RECEIVE_ARTIST} from '../constants';
+import {RECEIVE_ARTISTS, RECEIVE_ARTIST, RECEIVE_INPUT} from '../constants';
 import axios from 'axios';
 
 export const receiveArtists = artists => ({

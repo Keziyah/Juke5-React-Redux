@@ -12,7 +12,7 @@ import NewPlaylistContainer from './containers/NewPlaylistContainer';
 import PlaylistContainer from './containers/PlaylistContainer';
 import LyricsContainer from './containers/LyricsContainer';
 import StationsContainer from './containers/StationsContainer';
-import StationContainer from './containers/StationsContainer';
+import StationContainer from './containers/StationContainer';
 
 import App from './components/App';
 import Albums from './components/Albums';

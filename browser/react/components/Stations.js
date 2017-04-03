@@ -11,7 +11,6 @@ export default (props) => {
 // ];
 
 const stations = props.stations
-console.log("props", props)
 
   return (
     <div>
